@@ -24,7 +24,6 @@
 #     if height < 100 or height > 250 or \
 #     weight < 20 or weight > 200:
 #         return None
-    
 #     return weight / (height/100) ** 2
 
 
@@ -57,5 +56,6 @@
 #     print(f"Вес: {weight} кг, Рост: {height} см")
 #     print("BMI: ", bmi(weight, height))
 #     print("Анализ: ", analyze_bmi(weight, height))
+
 
 # main()
