@@ -1,4 +1,3 @@
-
 from Package_geometry_calc.Shapes.triangle import tr_perimeter, tr_area
 from Package_geometry_calc.Shapes.square import sq_perimeter, sq_area
 from Package_geometry_calc.Shapes.rectangle import rec_perimeter, rec_area
@@ -92,7 +91,7 @@ def main():
                 else:
                     for entry in get_my_journal():
                         print(f"Запрос: {entry['shape']} - {entry['operation']} - "
-                            f"{entry['result']:.2f}" )
+                            f"{entry['result']} {entry['units']}" )
                 
                 print("--------------------------------")
 
