@@ -1,7 +1,7 @@
 
-from package_book.input_data import get_input_data
-from package_book.operations import sum_values, quotient_values, max_value, min_value
-from package_book.stat import add_data, show_data
+from package_func.input_data import get_input_data
+from package_func.operations import sum_values, quotient_values, max_value, min_value
+from package_func.stat import add_data, show_data
 
 
 def main():
