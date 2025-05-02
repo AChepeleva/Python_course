@@ -4,7 +4,7 @@ import module as m
 # 0
 # 1 -1
 # 100 -100
-
+# pytest -v .\L_8\even\tests_module.py
 
 def test_add_100000():
     assert m.add(100000, 100000) == 200000
