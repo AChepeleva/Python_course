@@ -2,6 +2,7 @@ from package_classes.to_do_list_class import TodoList
 from package_classes.exceptions import BadIdError, BadNameError, BadPriorityError
 
 class App():
+    """Класс для работы со списком задач."""
     def __init__(self, TodoListInst):
         self.__todolist = TodoListInst
 

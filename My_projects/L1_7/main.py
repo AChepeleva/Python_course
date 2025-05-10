@@ -2,7 +2,7 @@ from Package_geometry_calc.Shapes.triangle import tr_perimeter, tr_area
 from Package_geometry_calc.Shapes.square import sq_perimeter, sq_area
 from Package_geometry_calc.Shapes.rectangle import rec_perimeter, rec_area
 from Package_geometry_calc.Shapes.circle import cir_perimeter, cir_area
-from Package_geometry_calc.History_journal.journal import add_to_journal, get_my_journal
+from Package_geometry_calc.History_journal.journal import add_to_journal, clear_journal, get_my_journal
 from input_data import input_triangle, input_square, input_rectangle, input_circle
 from chose_oper import chose_operation,validate_operation_input, print_result
 
@@ -13,6 +13,7 @@ def main():
     3 - Прямоугольника,
     4 - Круг,
     5 - Журнал,
+    6 - Очистить журнал,
     0 - Exit"""
     oper = input(msg)
 
@@ -82,7 +83,7 @@ def main():
 
                     print_result("Круга", "Периметр", result)
                     
-            case "5": # Журнал
+            case "5": # Журнал.
                 print("--------------------------------")
                 print("Журнал запросов:")
 
@@ -95,6 +96,16 @@ def main():
                 
                 print("--------------------------------")
 
+            case "6":  # Очистка журнала.
+                print("--------------------------------")
+
+                if not get_my_journal():
+                    print("Журнал уже пуст.")
+                else:
+                    print(clear_journal())
+
+                print("--------------------------------")
+
             case _:
                 print("--------------------------------")
                 print("Некорректные данные!")
@@ -102,5 +113,7 @@ def main():
 
         oper = input(msg)
 
-main()
+
+if __name__ == "__main__":
+    main()
 
