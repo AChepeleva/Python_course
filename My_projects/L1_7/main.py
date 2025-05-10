@@ -81,7 +81,7 @@ def main():
                     result = cir_area(r)
                     add_to_journal("Круг", "Площадь", result)
 
-                    print_result("Круга", "Периметр", result)
+                    print_result("Круга", "Площадь", result)
                     
             case "5": # Журнал.
                 print("--------------------------------")
