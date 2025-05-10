@@ -4,7 +4,7 @@ from Package_geometry_calc.Shapes.rectangle import rec_perimeter, rec_area
 from Package_geometry_calc.Shapes.circle import cir_perimeter, cir_area
 from Package_geometry_calc.History_journal.journal import add_to_journal, clear_journal, get_my_journal
 from input_data import input_triangle, input_square, input_rectangle, input_circle
-from chose_oper import chose_operation,validate_operation_input, print_result
+from chose_oper import validate_operation_input, print_result
 
 
 def main():

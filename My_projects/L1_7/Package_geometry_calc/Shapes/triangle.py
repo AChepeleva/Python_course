@@ -14,5 +14,3 @@ def tr_area(a,b,c):
     semi_p = tr_perimeter(a,b,c) / 2
     S_tr = (semi_p * (semi_p - a) * (semi_p - b) * (semi_p - c)) ** 0.5
     return round(S_tr, 2)
-
-#print(tr_perimeter(3,3,3))

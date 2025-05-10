@@ -10,8 +10,7 @@ def add_to_journal(shape, operation, result):
 
 def clear_journal():
     """Функция очищает весь журнал запросов."""
-    global my_journal
-    my_journal = []
+    del my_journal[:]
     return "Журнал успешно очищен."
 
 

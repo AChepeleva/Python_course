@@ -2,7 +2,7 @@
 
 def chose_operation():
     """Функция для выбора операции"""
-    operation = input("1 - Периметр, 2 -Площадь --> ")
+    operation = input("1 - Периметр, 2 - Площадь --> ")
     return operation
 
 def validate_operation_input():
