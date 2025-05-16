@@ -38,3 +38,4 @@ for number, url in enumerate(img_urls):
     with open(f"{number}-nasa.JPG", "wb") as img_file:
         img_file.write(response.content)
         print(f"Успешно записал - {number}-nasa.JPG")
+
